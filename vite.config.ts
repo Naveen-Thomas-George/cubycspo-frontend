@@ -19,4 +19,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: "dist", // This ensures Azure finds the correct folder after build
+  },
 }));
